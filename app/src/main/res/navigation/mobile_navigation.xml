@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_MBC">
+
+    <fragment
+        android:id="@+id/nav_MBC"
+        android:name="com.example.mediaapprove.ui.MBC.MBCFragment"
+        android:label="@string/menu_bc"
+        tools:layout="@layout/fragment_mbc" />
+
+    <fragment
+        android:id="@+id/nav_Beneficiaries"
+        android:name="com.example.mediaapprove.ui.Beneficiaries.BeneFragment"
+        android:label="@string/menu_bene"
+        tools:layout="@layout/fragment_bene" />
+
+    <fragment
+        android:id="@+id/nav_MNP"
+        android:name="com.example.mediaapprove.ui.MNP.MNPFragment"
+        android:label="Healthcare Providers"
+        tools:layout="@layout/fragment_mnp" />
+
+    <fragment
+        android:id="@+id/nav_APP"
+        android:name="com.example.mediaapprove.ui.Approval.APPFragment"
+        android:label="Medical Claim Status"
+        tools:layout="@layout/fragment_app" />
+    <fragment
+        android:id="@+id/nav_insure"
+        android:name="com.example.mediaapprove.ui.MNP.MNPFragment"
+        android:label="@string/menu_NP"
+        tools:layout="@layout/fragment_mnp" />
+
+    <fragment
+        android:id="@+id/nav_CCI"
+        android:name="com.example.mediaapprove.ui.CCI.CCIFragment"
+        android:label="Insurance Branch"
+        tools:layout="@layout/fragment_cci" />
+</navigation>

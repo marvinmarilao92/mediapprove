@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_MBC"
+            android:icon="@drawable/ic_mbc"
+            android:title="Medical Benefts and Coverage" />
+        <item
+            android:id="@+id/nav_Beneficiaries"
+            android:icon="@drawable/ic_benefit"
+            android:title="Beneficiaries" />
+        <item
+            android:id="@+id/nav_MNP"
+            android:icon="@drawable/ic_volunteer"
+            android:title="Medical Health Providers" />
+        <item
+            android:id="@+id/nav_APP"
+            android:icon="@drawable/ic_approve"
+            android:title="Medical Claim Status" />
+<!--        <item-->
+<!--            android:id="@+id/nav_insure"-->
+<!--            android:icon="@drawable/ic_ensure"-->
+<!--            android:title="Insurance" />-->
+        <item
+            android:id="@+id/nav_CCI"
+            android:icon="@drawable/ic_call"
+            android:title="Call Center Information" />
+
+    </group>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Approval.APPFragment">
+    <RelativeLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvlinearlayout"
+        tools:ignore="MissingConstraints,UnknownId">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="85sp"
+            app:startIconDrawable="?android:attr/actionModeWebSearchDrawable">
+
+            <EditText
+                android:id="@+id/ETsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableTint="@color/black"
+                android:hint="Search Account"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:background="@drawable/btn_black"
+            android:gravity="center"
+            android:text="Click to View Medical Claim Status"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="90sp"
+        android:layout_below="@id/tvlinearlayout"
+        android:id="@+id/tvlinearlayout1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:text="Provider"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Status"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Action"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_date"
+            android:layout_marginEnd="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvlinearlayout"
+        android:layout_marginTop="110dp"
+        android:id="@+id/swiperefresh"
+        tools:ignore="NotSibling,UnknownId">
+        <androidx.recyclerview.widget.RecyclerView
+            android:backgroundTint="@color/white"
+            android:foregroundTint="@color/black"
+            android:scrollbarSize="20sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/itemlist_app" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MediaApprove</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_bc">Benefits &amp; Coverage</string>
+    <string name="menu_bene">Beneficiary</string>
+    <string name="menu_NP">Network Provider</string>
+    <string name="MBC_title"> MEDICAL BENEFITS &amp; COVERAGE </string>
+    <string name="Bene_title"> Beneficiaries</string>
+    <string name="MNC_title"> MEDICAL NETWORK PROVIDERS </string>
+    <string name="search_account"></string>
+    <string name="eye">eye</string>
+    <string name="hospital_personnel">Hospital Personnel</string>
+    <string name="mnp_name">Name</string>
+    <string name="mnp_role">Role</string>
+    <string name="mnp_done_btn">DONE</string>
+    <string name="todo">TODO</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+</resources>

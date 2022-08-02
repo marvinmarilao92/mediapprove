@@ -1,0 +1,11 @@
+Included Modules:
+	- Sign-up/Sign-in Screen:
+	- Easy User Registration - Provide Nation ID Number, mobile number, DOB, received OTP
+	- Easy Login - input id number and mobile number
+	- MFA - receive SMS OTP
+	- View - Medical Benefits & Coverage
+	- Vew - Beneficiaries
+	- View - Medical Health Care Providers
+	- View - Medical Approval, Approval Number, Provider, Start and End Date
+	- View - Insurance Branch and Call center information
+	- Complain/Feedback
